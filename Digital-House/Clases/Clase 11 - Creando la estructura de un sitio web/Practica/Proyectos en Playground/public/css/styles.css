@@ -1,0 +1,63 @@
+body{
+    background-color: #EAC926;
+}
+
+.search_btn {
+  background-color: #ebebeb;
+  border:none;
+  color: black;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+*{
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+.search_btn:hover {
+  background-color: #666;
+}
+.search_bar{
+    height: 35px;
+    width: 150px;
+}
+p{
+    text-align: center;
+    font-size: 16px;
+}
+p.precios {
+    text-align: center;
+    font-size: 18px;
+}
+.titulares{
+    font-size: 24px;
+}
+h4.titulares{
+    color:#666;
+}
+footer{
+    text-align: center;
+}
+.icono-margen{
+    margin-left: 10px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: #ebebeb;
+}
+.icono{
+    font-size: 80px;
+    padding-top: 100px;
+    color:blue
+
+}
+.final{
+
+    background-color: white;
+}
