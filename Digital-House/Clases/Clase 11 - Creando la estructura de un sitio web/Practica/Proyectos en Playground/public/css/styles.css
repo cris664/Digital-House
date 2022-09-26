@@ -1,5 +1,10 @@
 
-
+*{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 .search_btn {
   background-color: #ebebeb;
   border:none;
@@ -16,11 +21,7 @@
     height: 35px;
     width: 150px;
 }
-*{
-    font-size: 12px;
-    margin: 0px;
-    padding: 0px;
-}
+
 .icono-margen{
     margin-left: 10px;
 }
@@ -65,10 +66,6 @@ div.burger-menu i{
 }
 div.burger-menu{
     text-align: center;
-}
-*{
-    margin: 0px;
-    padding: 0px;
 }
 
 body{
@@ -143,22 +140,37 @@ div.burger-menu i{
     padding: 10px;
     width: 40px;
 }
-
-article div.main-article{
-    width: 100%;
+article{
     box-sizing: border-box;
     text-align: center;
-    margin-bottom: 10px;
-    border-top: solid 1px #ebebeb;
-
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 15px;
     
+ 
+
 }
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+ div.main-article{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    border-top: solid 1px #ebebeb;
+    
+   
+}
+
 main{
     box-sizing: border-box;
-    margin-left: 30px;
+    margin-left: auto;
     margin-right: auto;
-    position: center;
-    width: 90vw;
+    width: 90%;
+   
 }
 
 .price{
@@ -185,26 +197,56 @@ main{
 }
 
 main section article{
-    background-color: #fff;
-    margin-left: 200px;
-    margin-right: 200px;
+ 
+    background-color: #fff;    
 }
 
 main section article img{
-    width: 300px;
+    width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+  
    
 }
 
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    }
 
 main section article i,
 .discount{
     color: #39b54a;
 }
-@media screen and (max-width: 500px) {
-    /* properties for a screen with size 500px */
+.publication{
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+.icono_envio{
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: -15px;
+}
 
-  }
+@media(max-width:360px)
+{
+    article{
+        box-shadow: none;
+    }
+    div.main-article .description{
+        visibility: hidden;
+    }
+    
+}
+@media (min-width : 361px){
+    
+}
