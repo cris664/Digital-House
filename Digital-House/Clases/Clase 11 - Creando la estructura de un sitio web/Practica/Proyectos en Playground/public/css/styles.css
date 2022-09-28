@@ -5,6 +5,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.fa-truck{
+    transition: transfor .7s;
+}
+.fa-truck:hover{
+    transform: rotate(-90deg);
+}
 .search_btn {
   background-color: #ebebeb;
   border:none;
@@ -236,7 +242,7 @@ main section article i,
     margin-left: auto;
     margin-top: -15px;
 }
-
+/*Mobile*/
 @media(max-width:360px)
 {
     article{
@@ -247,6 +253,26 @@ main section article i,
     }
     
 }
-@media (min-width : 361px){
+/*Tablet*/
+@media (max-width : 768px){
+  
+}
+/*PC*/
+@media (min-width : 769px){
+    div.main-article .description{
+       opacity: 0;
+       transition: opacity 0.5s ease;
+    }
+    div.main-article .description:hover{
+        opacity: 1;     
     
+       
+    }    
+    div.main-article {
+        box-shadow: none;
+        transition: box-shadow 0.5s;
+    }   
+    div.main-article:hover{
+        box-shadow : 0px 10px 10px rgb( 100 , 100 , 100 );
+    }
 }
