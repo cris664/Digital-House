@@ -5,27 +5,40 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .fa-truck{
     transition: transfor .7s;
 }
 .fa-truck:hover{
     transform: rotate(-90deg);
 }
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .search_btn {
+  display: flex;
+  box-sizing: border-box;
   background-color: #ebebeb;
   border:none;
   color: black;
-  padding: 12px 16px;
-  font-size: 16px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
+}
+.search_logo{
+   align-self: center;
 }
 
 .search_btn:hover {
   background-color: #666;
 }
 .search_bar{
-    height: 35px;
-    width: 150px;
+    height:20px;
+    width: 210px;
 }
 
 .icono-margen{
@@ -91,19 +104,60 @@ p{
 header{
     background-color: #EAC926;
 }
-
-header div.logo img{
-    width: 50%;
-    height: 80px;
+.top-header{
+    height: auto;
 }
-
+.container{
+   
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    max-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+img{
+    width: 100%;
+}
 header div.logo{
-    padding: 10px;
+    display: flex;
+    flex-basis: 50vw;
+    max-width: 250px;   
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px; 
+    align-items: center;
+   
+    
 }
 header nav{
     font-size: 12px;
 }
-
+.contenedor-nav{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-bar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+}
+.nav-bar2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+header li{
+    margin-right:10px;
+}
 header ul li{
     list-style-type: none;
 }
@@ -124,7 +178,6 @@ header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    width: 10%;
 }
 
 header div.top-header p{
@@ -132,6 +185,7 @@ header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
+
 }
 
 div.burger-menu{
@@ -244,7 +298,13 @@ main section article i,
 }
 /*Mobile*/
 @media(max-width:360px)
-{
+{   
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar2{
+        display: none;
+    }
     article{
         box-shadow: none;
     }
@@ -255,10 +315,27 @@ main section article i,
 }
 /*Tablet*/
 @media (max-width : 768px){
-  
+    div.burger-menu{
+        display: none;
+    }
+    div.top-header{
+        display: flex;
+        flex-direction: row;
+    }
 }
 /*PC*/
 @media (min-width : 769px){
+    div.top-header{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+   
+    div.burger-menu{
+        display: none;
+    }
     article .description{
        
        display: none;
