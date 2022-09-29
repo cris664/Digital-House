@@ -1,0 +1,17 @@
+@media(max-width:360px)
+{
+ 
+}
+/*Tablet*/
+@media (max-width : 768px){
+  
+}
+/*PC*/
+@media (min-width : 769px){
+    button{
+        transition: background-color 0.3s;
+    }
+    button:hover{
+        background-color: #0022AA;
+    }
+}

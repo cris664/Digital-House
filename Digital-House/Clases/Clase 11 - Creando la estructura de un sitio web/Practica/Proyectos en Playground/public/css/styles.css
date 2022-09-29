@@ -92,8 +92,9 @@ header{
     background-color: #EAC926;
 }
 
-header div.logo{
+header div.logo img{
     width: 50%;
+    height: 80px;
 }
 
 header div.logo{
@@ -127,6 +128,7 @@ header .form .submit{
 }
 
 header div.top-header p{
+    box-sizing: border-box;
     width: 100%;
     text-align: center;
     margin-top: 10px;
@@ -231,9 +233,7 @@ main section article i,
 .discount{
     color: #39b54a;
 }
-.publication{
-    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-}
+
 .icono_envio{
     box-sizing: border-box;
     height: 30px;
@@ -259,20 +259,27 @@ main section article i,
 }
 /*PC*/
 @media (min-width : 769px){
-    div.main-article .description{
-       opacity: 0;
-       transition: opacity 0.5s ease;
+    article .description{
+       
+       display: none;
+       transition: display 0.5s ease;
+      
     }
-    div.main-article .description:hover{
-        opacity: 1;     
+    article:hover .fa-truck{
+        transform: rotate(-90deg);;
     
        
     }    
-    div.main-article {
+    article:hover .description{
+        display: block;
+       
+    }
+    article .publication{
         box-shadow: none;
         transition: box-shadow 0.5s;
-    }   
-    div.main-article:hover{
-        box-shadow : 0px 10px 10px rgb( 100 , 100 , 100 );
     }
+    article.publication:hover {
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
 }
