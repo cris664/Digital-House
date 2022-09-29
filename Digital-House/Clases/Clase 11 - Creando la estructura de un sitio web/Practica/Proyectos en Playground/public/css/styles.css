@@ -260,12 +260,12 @@ main section article i,
 /*PC*/
 @media (min-width : 769px){
     div.main-article .description{
-       opacity: 0;
-       transition: opacity 0.5s ease;
+        opacity: 0;
+        transition: opacity 0.5s ease;
     }
     div.main-article .description:hover{
         opacity: 1;     
-    
+        
        
     }    
     div.main-article {
