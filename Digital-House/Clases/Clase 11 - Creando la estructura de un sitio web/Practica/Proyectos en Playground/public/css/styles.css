@@ -237,17 +237,21 @@ main{
 
 .price{
     font-size: 18px;
+    margin-left: 5px;
 }
 
 .discount,
 .description{
+    margin-top: 8px;
+    margin-left: 5px;
     font-size: 16px;
     font-weight: normal;
 }
 
 h3,
 .description{
-    color: #666;
+    color: #black;
+    font-weight: bold;
 }
 
 section.banner img{
