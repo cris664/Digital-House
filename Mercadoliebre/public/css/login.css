@@ -1,0 +1,61 @@
+
+.login-form{
+    box-sizing: border-box;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.button_container{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.button-enviar{
+
+    margin-top: 20px;
+    width: 250px;
+    height: 20px;
+}
+.username_container{
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 20px;
+}
+.pass_container{
+    display: flex;
+    box-sizing: border-box;
+
+}
+.div_label{
+    display: flex;
+    box-sizing: border-box;
+    width: 200px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+input{
+    width: 200px;
+    font-size: 20px;
+}
+@media(max-width:360px)
+{
+ 
+}
+/*Tablet*/
+@media (max-width : 768px){
+  
+}
+/*PC*/
+@media (min-width : 769px){
+    
+    button{
+        transition: background-color 0.3s;
+    }
+    button:hover{
+        background-color: #0022AA;
+    }
+}
