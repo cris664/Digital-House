@@ -20,12 +20,23 @@ const controller = {
 
 	// Create - Form to create
 	create: (req, res) => {
-		res.render('./views/product-create-form')
+		res.render('product-create-form')
 	},
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		// Do the magic
+		let newProduct = {
+			id: Date.now(),
+			name: req.body.name,
+			price: req.body.price,
+			discount: req.body.discount,
+			category: req.body.category,
+			description: req.body.description,
+			image: req.body.image
+		}
+		products.push(newProduct)
+		fs.writeFileSync(productsFilePath,JSON.stringify(products,null,' '))
+		res.redirect('/products')
 	},
 
 	// Update - Form to edit

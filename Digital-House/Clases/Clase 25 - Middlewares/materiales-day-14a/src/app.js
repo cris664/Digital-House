@@ -5,6 +5,8 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 
+const userLogs = require('../src/middlewares/userLogs')
+const autorizarAdmin = require('../src/middlewares/autorizarAdmin')
 // ************ express() - (don't touch) ************
 const app = express();
 
@@ -14,7 +16,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
-
+app.use(userLogs)
+app.use(autorizarAdmin)
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs');
 app.set('views', './src/views'); // Seteo de la ubicación de la carpeta "views"
@@ -26,6 +29,8 @@ app.set('views', './src/views'); // Seteo de la ubicación de la carpeta "views"
 const mainRouter = require('./routes/main');
 app.use('/', mainRouter);
 
+const adminRouter = require('./routes/adminRouter')
+app.use('/',adminRouter)
 
 
 // ************ DON'T TOUCH FROM HERE ************
