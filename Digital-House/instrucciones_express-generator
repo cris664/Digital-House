@@ -1,0 +1,5 @@
+npm install express-generator -d
+express --view=ejs src
+cd src
+npm install 
+DEBUG=src* npm start

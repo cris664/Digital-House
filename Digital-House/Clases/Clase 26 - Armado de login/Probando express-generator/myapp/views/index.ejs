@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <% if(locals.datos){ %> 
+        <p>Hola <%= datos.name%>, elegiste el color: <%=datos.color %>, tu mail es: <%= datos.email %> y tu edad es: <%= datos.age %>  </p>
+        <% }else{ %> 
+    <form action="/" method="post">
+   
+            <label for="name">Nombre</label>
+            <input type="text" id ="name" name="name">
+            <select name ="color" id="color">
+              <option value="rojo"> Rojo</option>
+              <option value="azul">Azul</option>
+              <option value="verde">Verde</option>
+            </select>
+    
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" text="15" >
+        
+            <label for="email">E-mail</label>
+            <input type="email" name="email" text="15" >
+      
+            <label for="age">Edad</label>
+            <input type="number" name="age" text="15" >
+        
+        <input type = "submit" value="Enviar">
+    </form>
+<% } %> 
+</body>
+</html>
