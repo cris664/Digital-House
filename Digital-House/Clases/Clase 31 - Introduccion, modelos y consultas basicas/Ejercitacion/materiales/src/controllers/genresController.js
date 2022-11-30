@@ -1,11 +1,12 @@
 
 let db = require('../database/models');
+const sequelize = db.sequelize;
 
 const generesController = {
     list: function(req, res) {
-        db.Generos.findAll()
-            .then(function(generos){
-                res.render('moviesList',{generos:generos});
+        db.Genre.findAll()
+            .then(genres=>{
+                res.render('genresList.ejs',{genres});
             })
         
     },
@@ -20,4 +21,4 @@ const generesController = {
     }
 
 }
-module.exports = moviesController;
+module.exports = generesController;

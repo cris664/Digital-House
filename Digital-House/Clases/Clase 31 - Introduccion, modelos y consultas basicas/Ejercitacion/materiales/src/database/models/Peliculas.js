@@ -1,32 +1,32 @@
-module.exports = function(sequelize,DataTypes)
+module.exports = function(sequelize,dataTypes)
 {   
-    let alias = "Peliculas";
+    let alias = "Pelicula";
     let cols = {
         id: 
         {
-            type: DataTypes.INTERGER,
+            type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         title: {
-            type: DataTypes.STRING
+            type: dataTypes.STRING
         },
         length: 
         {
-            type: DataTypes.INTERGER
+            type: dataTypes.INTEGER
         },
         rating: 
         {
-            type: DataTypes.INTERGER
+            type: dataTypes.INTEGER
         },
         awards:
         {
-            type: DataTypes.STRING
+            type: dataTypes.STRING
         }
 
     };
     let config = {
-        tableName:"movie",
+        tableName:"movies",
         timestamps:false
     }
     const Pelicula = sequelize.define(alias,cols,config);
